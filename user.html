@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>User Home</title>
+	<script src="https://code.jquery.com/jquery-3.1.1.js"></script>
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+  <!-- Optional theme -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+
+
+    <link rel="stylesheet" type="text/css" href="reset.css">
+    <link rel="stylesheet" type="text/css" href="user.css">
+	    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+	    <script src="test.js"></script>
+
+    <link href="https://fonts.googleapis.com/css?family=Baloo" rel="stylesheet">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+</head>
+<body>
+
+	<header class="clearfix">
+        <nav class="navbar">
+          <div class="container-fluid"> 
+	          <div class = "col-md-1">
+	          </div>
+	          <div class = "col-md-4">
+	            <ul class="nav navbar-nav">    
+	              <li><a href="" class="navbar-brand"><img src ="images/infocurrency-logo-white.png"></a></li>          
+	            </ul>
+	            </div>
+	            <div class = "col-md-4">
+	            <ul class="nav navbar-nav navbar-right">
+	              <li>
+	                <div class="inset">
+	                  <i class="fa fa-user" aria-hidden="true"></i> 
+	                </div>
+	              </li>
+	            </ul>
+	            </div>
+	             <div class = "col-md-3 user">User
+
+	          </div>
+          </div>
+        </nav>
+    </header>
+	<div class = "container-fluid">
+		<div class = "row">
+			<div class = "col-md-1">
+			</div>
+			<div class = "col-md-6">
+				<div class = "main main-container">
+				<h2>Available Surveys</h2>
+				<div class="col">
+                    <a href="#surveyModal1" class="portfolio-link" data-toggle="modal">
+                               Demographic Survey
+                    </a>
+                </div>
+				<div class = "col">
+				<a href="#surveyModal2" class="portfolio-link" data-toggle="modal">
+                               Interests Survey
+                    </a>
+				</div>
+				</div>
+			</div>
+
+			<div class = "col-md-3">
+			<div class = "main main-container">
+				<h2>Your Information Profile</h2>
+				<h4>Name</h4>
+				<h4>Age</h4>
+				<h4>Status</h4>
+				<h4>Income</h4>
+				<h4>Location</h4>
+				<h4>Interests</h4>
+				</div>
+				<div class = "main main-container">
+				<h2>Account Balance</h2>
+				<h4>$0.00</h4>
+				</div>
+			</div>
+			<div class = "col-md-1">
+			</div>
+		</div>
+	</div>
+	<!-- Demographic Modal -->
+
+	<div class="survey-modal modal fade" id="surveyModal1" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h3>Answer a Few Basic Questions to Start</h3>
+                            <h4>What Is Your Gender?</h4>
+              <form>
+                  <div class="question text-center">
+                      <input id="man" type="radio" name="gender" value="man" />
+                      <label class="option man" for="man"></label>
+                      <input id="woman" type="radio" name="gender" value="woman" />
+                      <label class="option woman" for="woman"></label>    
+                      <input id="other" type="radio" name="gender" value="other" />
+                      <label class="option other" for="other"></label>
+                  </div>
+              </form>
+            <h4>What's Your Age?</h4>
+              <div class="rb-box">
+            <div id="rb-2" class="rb">
+
+              <div class="rb-tab"  name = "age" data-value="18-24">
+                <div class="rb-spot">
+                  <span class="rb-txt">18-24</span>
+                </div>
+              </div><div class="rb-tab rb-tab-active" name = "age" data-value="25-34">
+                <div class="rb-spot">
+                  <span class="rb-txt">25-34</span>
+                </div>
+              </div><div class="rb-tab" name = "age" data-value="35-44">
+                <div class="rb-spot">
+                  <span class="rb-txt">35-44</span>
+                </div>
+              </div><div class="rb-tab" name = "age" data-value="55-64">
+                <div class="rb-spot">
+                  <span class="rb-txt">45-54</span>
+                </div>
+              </div><div class="rb-tab" name = "age" data-value="65+">
+                <div class="rb-spot">
+                  <span class="rb-txt">65+</span>
+                </div>
+              </div>
+            </div>
+            <!-- Radio Button Module -->
+            <h4>What's Your Income?</h4>
+            <div id="rb-2" class="rb">
+
+              <div class="rb-tab" name = "income" data-value="<$39,999k">
+                <div class="rb-spot">
+                  <span class="rb-txt"><$39,999k</span>
+                </div>
+              </div><div class="rb-tab rb-tab-active"  name = "income" data-value="$40-50k">
+                <div class="rb-spot">
+                  <span class="rb-txt">$40-50k</span>
+                </div>
+              </div><div class="rb-tab" name = "income" data-value="$50-74,999">
+                <div class="rb-spot">
+                  <span class="rb-txt">$50-74,999</span>
+                </div>
+              </div><div class="rb-tab" name = "income" data-value="$75-99,999">
+                <div class="rb-spot">
+                  <span class="rb-txt">$75-99,999</span>
+                </div>
+              </div><div class="rb-tab" name = "income" data-value="$100-124,999">
+                <div class="rb-spot">
+                  <span class="rb-txt">$100-124,999</span>
+                </div>
+                 </div><div class="rb-tab" name = "income" data-value="$125-149,999">
+                <div class="rb-spot">
+                  <span class="rb-txt">$125-149,999</span>
+                </div>
+                       </div><div class="rb-tab" name = "income" data-value="$150-249,999">
+                <div class="rb-spot">
+                  <span class="rb-txt">$150-249,999</span>
+                </div>
+                       </div><div class="rb-tab" name = "income" data-value="$250<">
+                <div class="rb-spot">
+                  <span class="rb-txt">$250<</span>
+                </div>
+              </div>
+            </div>
+              <h4>What's Your Living Situation?</h4>
+              <form>
+                  <div class="question">
+                    <input id="single" type="radio" name="status" value="single" />
+                      <label class="option single" for="single"></label>
+                      <input id="couple" type="radio" name="status" value="couple" />
+                      <label class="option couple" for="couple"></label> 
+                      <input id="family" type="radio" name="status" value="family" />
+                      <label class="option family" for="family"></label>            
+                  </div>
+              </form>    
+              <h4>Where Do You Live?</h4>
+              <div class="form-group">
+                <input type="zip" class="form-control" id="zip-code" placeholder="Zip Code">
+              </div>                        
+              </div> 
+                            <button type="button" class="btn btn-xl" data-dismiss="modal"></i>Submit</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    	<!-- Interests Modal -->
+
+	<div class="survey-modal modal fade" id="surveyModal2" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body text-center">
+                          <h3>Let's get an idea of what your interests are</h3>
+                          <div class="interest"><input type="checkbox" id="c1" name="cc" /> <label for="c1"><i class="fa fa-cutlery fa-4x"></i></label>
+                          </div>
+                          <div class="interest"><input type="checkbox" id="c2" name="cc" />
+                            <label for="c2"><i class="fa fa-music fa-4x"></i></label>
+                          </div>
+                          <div class="interest"><input type="checkbox" id="c3" name="cc" />
+                            <label for="c3"><i class="fa fa-ticket fa-4x"></i></label>
+                          </div>
+                          <div class="interest"><input type="checkbox" id="c4" name="cc" />
+                            <label for="c4"><i class="fa fa-futbol-o fa-4x"></i></label>
+                          </div>
+                          <div class="interest"><input type="checkbox" id="c5" name="cc" />
+                            <label for="c5"><i class="fa fa-facebook fa-4x"></i></label>
+                          </div>
+                            <button type="button" class="btn btn-xl" data-dismiss="modal"></i>Submit</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
