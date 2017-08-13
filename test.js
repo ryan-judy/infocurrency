@@ -18,6 +18,12 @@ $(document).ready(function() {
 	  $(this).parent().find(".rb-tab").removeClass("rb-tab-active");
 	  $(this).addClass("rb-tab-active");
 	});
+// if user age = null, then display demographic survey and hide the interest survey
+
+// else if user movies = null, then display interest survey and hide demographic survey
+
+// else write out Check back in for additional surveys and see if your information has been purchased
+
 
 
 });

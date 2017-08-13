@@ -3,58 +3,82 @@
 <head>
 	<title>User Home</title>
 	<script src="https://code.jquery.com/jquery-3.1.1.js"></script>
-  <!-- Latest compiled and minified CSS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
-  <!-- Optional theme -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
 
 
     <link rel="stylesheet" type="text/css" href="reset.css">
     <link rel="stylesheet" type="text/css" href="user.css">
-	    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
-	    <script src="test.js"></script>
+	  <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+	   <script src="test.js"></script>
 
-    <link href="https://fonts.googleapis.com/css?family=Baloo" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Share:400,400i,700,700i" rel="stylesheet">
     <meta name="viewport" content="initial-scale=1, maximum-scale=1">
-<!-- Latest compiled and minified JavaScript -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 </head>
 <body>
-
-	<header class="clearfix">
-        <nav class="navbar">
-          <div class="container-fluid"> 
-	          <div class = "col-md-1">
-	          </div>
-	          <div class = "col-md-4">
-	            <ul class="nav navbar-nav">    
-	              <li><a href="" class="navbar-brand"><img src ="images/infocurrency-logo-white.png"></a></li>          
-	            </ul>
-	            </div>
-	            <div class = "col-md-4">
-	            <ul class="nav navbar-nav navbar-right">
-	              <li>
-	                <div class="inset">
-	                  <i class="fa fa-user" aria-hidden="true"></i> 
-	                </div>
-	              </li>
-	            </ul>
-	            </div>
-	             <div class = "col-md-3 user">User
-
-	          </div>
-          </div>
-        </nav>
-    </header>
-	<div class = "container-fluid">
+<div class="navbar navbar-fixed-top" role="navigation">
+    <div class="container"> 
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span><i class = "fa fa-user"></i></span>
+            </button>
+            <a target="_blank" href="#" class="navbar-brand">InfoCurrency</a>
+        </div>
+        <div class="collapse navbar-collapse">
+            <ul class="nav navbar-nav navbar-right">
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                        <span class="glyphicon glyphicon-user"></span> 
+                        <strong>User Name</strong>
+                        <span class="glyphicon glyphicon-chevron-down"></span>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li>
+                            <div class="navbar-login">
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <p class="text-center">
+                                            <span class="glyphicon glyphicon-user icon-size"></span>
+                                        </p>
+                                    </div>
+                                    <div class="col-md-8">
+                                        <p class="text-left"><strong>User Name</strong></p>
+                                        <p class="text-left small">username@gmail.com</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <div class="navbar-login navbar-login-session">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <p>
+                                            <a href="#" class="btn btn-danger btn-block">Log Out</a>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+	<div class = "container fluid">
+  <div class = "row-margin">
+  </div>
 		<div class = "row">
 			<div class = "col-md-1">
 			</div>
 			<div class = "col-md-6">
 				<div class = "main main-container">
 				<h2>Available Surveys</h2>
+        <hr>
 				<div class="col">
                     <a href="#surveyModal1" class="portfolio-link" data-toggle="modal">
                                Demographic Survey
@@ -68,19 +92,20 @@
 				</div>
 			</div>
 
-			<div class = "col-md-3">
+			<div class = "col-md-4">
 			<div class = "main main-container">
-				<h2>Your Information Profile</h2>
-				<h4>Name</h4>
-				<h4>Age</h4>
-				<h4>Status</h4>
-				<h4>Income</h4>
-				<h4>Location</h4>
-				<h4>Interests</h4>
+        <h2>Account Balance</h2>
+        <hr>
+        <h3>$0.00</h3>
 				</div>
 				<div class = "main main-container">
-				<h2>Account Balance</h2>
-				<h4>$0.00</h4>
+      <h2>Your InfoCurrency Profile</h2>
+        <hr>
+        <h4>Age</h4>
+        <h4>Status</h4>
+        <h4>Income</h4>
+        <h4>Location</h4>
+        <h4>Interests</h4>
 				</div>
 			</div>
 			<div class = "col-md-1">
@@ -101,8 +126,10 @@
                 <div class="row">
                     <div class="col-lg-8 col-lg-offset-2">
                         <div class="modal-body">
-                            <h3>Answer a Few Basic Questions to Start</h3>
-                            <h4>What Is Your Gender?</h4>
+                        <div class = "text-center">
+                            <h2>Answer a Few Basic Questions to Start</h2>
+                            <hr>
+                            <h4 class = "row">What Is Your Gender?</h4>
               <form>
                   <div class="question text-center">
                       <input id="man" type="radio" name="gender" value="man" />
@@ -113,10 +140,8 @@
                       <label class="option other" for="other"></label>
                   </div>
               </form>
-            <h4>What's Your Age?</h4>
-              <div class="rb-box">
-            <div id="rb-2" class="rb">
-
+            <h4 class = "row">What's Your Age?</h4>
+            <div class="rb">
               <div class="rb-tab"  name = "age" data-value="18-24">
                 <div class="rb-spot">
                   <span class="rb-txt">18-24</span>
@@ -140,8 +165,8 @@
               </div>
             </div>
             <!-- Radio Button Module -->
-            <h4>What's Your Income?</h4>
-            <div id="rb-2" class="rb">
+            <h4 class = "row">What's Your Income?</h4>
+            <div class="rb">
 
               <div class="rb-tab" name = "income" data-value="<$39,999k">
                 <div class="rb-spot">
@@ -177,7 +202,8 @@
                 </div>
               </div>
             </div>
-              <h4>What's Your Living Situation?</h4>
+            </div>
+              <h4 class = "row">What's Your Living Situation?</h4>
               <form>
                   <div class="question">
                     <input id="single" type="radio" name="status" value="single" />
@@ -188,13 +214,14 @@
                       <label class="option family" for="family"></label>            
                   </div>
               </form>    
-              <h4>Where Do You Live?</h4>
+              <h4 class = "row">Where Do You Live?</h4>
               <div class="form-group">
                 <input type="zip" class="form-control" id="zip-code" placeholder="Zip Code">
               </div>                        
               </div> 
                             <button type="button" class="btn btn-xl" data-dismiss="modal"></i>Submit</button>
                         </div>
+                    </div>
                     </div>
                 </div>
             </div>
@@ -212,27 +239,27 @@
             </div>
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body text-center">
-                          <h3>Let's get an idea of what your interests are</h3>
-                          <div class="interest"><input type="checkbox" id="c1" name="cc" /> <label for="c1"><i class="fa fa-cutlery fa-4x"></i></label>
+                        <div class="modal-body">
+                          <h2>Let's get an idea of what your interests are</h2> <h3> (Check all that apply)</h3>
+                          <div class="interest"><input type="checkbox" id="c1" name="cc" /> <label for="c1"><i class="fa fa-cutlery fa-6x"></i></label>
                           </div>
                           <div class="interest"><input type="checkbox" id="c2" name="cc" />
-                            <label for="c2"><i class="fa fa-music fa-4x"></i></label>
+                            <label for="c2"><i class="fa fa-music fa-6x"></i></label>
                           </div>
                           <div class="interest"><input type="checkbox" id="c3" name="cc" />
-                            <label for="c3"><i class="fa fa-ticket fa-4x"></i></label>
+                            <label for="c3"><i class="fa fa-ticket fa-6x"></i></label>
                           </div>
                           <div class="interest"><input type="checkbox" id="c4" name="cc" />
-                            <label for="c4"><i class="fa fa-futbol-o fa-4x"></i></label>
+                            <label for="c4"><i class="fa fa-futbol-o fa-6x"></i></label>
                           </div>
                           <div class="interest"><input type="checkbox" id="c5" name="cc" />
-                            <label for="c5"><i class="fa fa-facebook fa-4x"></i></label>
+                            <label for="c5"><i class="fa fa-facebook fa-6x"></i></label>
                           </div>
-                            <button type="button" class="btn btn-xl" data-dismiss="modal"></i>Submit</button>
-                        </div>
                     </div>
+
                 </div>
+                <div class = "row">
+              <button type="button" class="btn btn-xl" data-dismiss="modal"></i>Submit</button>  
             </div>
         </div>
     </div>
