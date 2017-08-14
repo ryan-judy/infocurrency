@@ -6,12 +6,14 @@ body {
 }
 
 h2 {
+  letter-spacing: -1px;
   font-size: 28px;
   color: #4f5e7d;
   margin-bottom: 20px;
 }
 
 h3 {
+  letter-spacing: -1px;
   font-size: 24px;
   color: #4f5e7d;
   margin-bottom: 20px;
@@ -20,6 +22,7 @@ h3 {
 h4 {
   font-size: 16px;
   margin: 20px 0px;
+  font-family: 'Lato'
 }
 
 h4.row {
@@ -48,6 +51,11 @@ a:visited {
   background-color: #4f5e7d;
 }
 
+.navbar-right {
+    font-family: 'Lato'
+
+}
+
 .navbar-toggle {
   height: 35px;
   width: 35px;
@@ -59,8 +67,13 @@ a:visited {
   letter-spacing: -1px;
   font-size: 30px;
   font-style: italic;
+  padding-left: 10px;
 }
 
+.nav>li>a:focus, .nav>li>a:hover {
+        text-decoration: none;
+        background-color: transparent !important;
+  }
 
 .main {
   margin-top: 60px;
@@ -105,6 +118,13 @@ a:visited {
     font-size: 87px;
 }
 
+.wallet {
+  height:60px;
+  width:60px;
+  margin-right: 10px;
+  vertical-align: bottom;
+}
+
 p {
   color: black;
   font-size: .9em;
@@ -130,6 +150,7 @@ p {
   transform: translate(-50%, -50%);
   font-size: .8em;
   color: #000;
+  font-family: 'Lato';
 }
 
 .rb-txt:visited {
@@ -185,19 +206,19 @@ p {
             appearance:none;
 }
 .woman{
-  background-image:url(images/woman.png);
+  background-image:url(../images/woman.png);
 }
 .couple{
-  background-image:url(images/couple.png);
+  background-image:url(../images/couple.png);
 }
 .other{
-  background-image:url(images/other.png);
+  background-image:url(../images/other.png);
 }
 .family{
-  background-image:url(images/family.png);
+  background-image:url(../images/family.png);
 }
 .man, .single{
-  background-image:url(images/man.png);
+  background-image:url(../images/man.png);
 }
 
 .question input:active +.option{opacity: .9;}
@@ -221,6 +242,7 @@ p {
 }
 
 .col {
+  letter-spacing: -1px;
   font-style: italic;
   color: white;
   width: 100%;
@@ -337,7 +359,35 @@ input[type="checkbox"]:checked + label {
     transform: rotate(90deg);
 }
 
+.flat-butt {
+  display: inline-block;
+  margin: 0 5px;
+  border-radius: 6px;
+  font-family: "Lato", sans-serif;
+  font-size: 16.5px;
+  padding: 12px 50px;
+  border: 0;
+  background: #5587fb;
+  color: #FFF;
+  cursor: pointer;
+  outline: 0;
+}
+.flat-butt:hover {
+  background: #4266ba;
+}
+.flat-primary-butt {
+  background: #5587fb;
+}
+.flat-primary-butt:hover {
+  background: #4266ba;
+}
 
+.flat-danger-butt {
+  background: #e74c3c;
+}
+.flat-danger-butt:hover {
+  background: #ec7063;
+}
 
 @media only screen and (min-width: 1000px) {
 
